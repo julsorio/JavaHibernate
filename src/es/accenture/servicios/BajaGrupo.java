@@ -21,5 +21,12 @@ public class BajaGrupo {
 		session.remove(grupo);
 		
 		transaction.commit();
+	
+	}
+	
+	public static void main(String []args) {
+		Grupo baja= ObtenerGrupo.obtener();
+		
+	BajaGrupo.bajaGrupo(baja);	
 	}
 }

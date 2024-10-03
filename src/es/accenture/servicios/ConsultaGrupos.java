@@ -18,4 +18,15 @@ public class ConsultaGrupos {
 		
 		return listaGrupos;
 	}
+	
+	public static void main(String [] args) {
+		List<Grupo> consulta = ConsultaGrupos.obtenerListaGrupos();
+	
+		System.out.println("lista de grupos musicales");
+		for (int in =0; in<consulta.size();in++) {
+			Grupo grupo=consulta.get(in);
+			System.out.println(grupo.toString());
+		}
+		
+	}
 }
